@@ -1,5 +1,5 @@
 import type { FC } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Button from "@mui/material/Button";
 import DialogTitle from "@mui/material/DialogTitle";
 import Dialog from "@mui/material/Dialog";
@@ -13,12 +13,24 @@ export interface SystemManagementDialogProps {
 }
 
 const SystemManagementDialog: FC<SystemManagementDialogProps> = (props) => {
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const { onClose, open } = props;
 
   const handleClose = () => {
     onClose();
   };
+
+  const handleClickUsageCsvExport = () => {
+    navigate("/usage-csv-export")
+  }
+
+  const handleClickInfomation = () => {
+    navigate("/infomation")
+  }
+
+  const handleClickManual = () => {
+    navigate("/manual")
+  }
 
   return (
     <Dialog
@@ -54,6 +66,7 @@ const SystemManagementDialog: FC<SystemManagementDialogProps> = (props) => {
             color="primary"
             size="large"
             sx={{ width: 250 }}
+            onClick={handleClickUsageCsvExport}
           >
             利用状況CSVエクスポート
           </Button>
@@ -62,6 +75,7 @@ const SystemManagementDialog: FC<SystemManagementDialogProps> = (props) => {
             color="primary"
             size="large"
             sx={{ width: 250 }}
+            onClick={handleClickInfomation}
           >
             お知らせ情報登録
           </Button>
@@ -72,6 +86,7 @@ const SystemManagementDialog: FC<SystemManagementDialogProps> = (props) => {
             color="primary"
             size="large"
             sx={{ width: 250 }}
+            onClick={handleClickManual}
           >
             マニュアル更新
           </Button>
