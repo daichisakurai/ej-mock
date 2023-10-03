@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "manual_name": "オペレータ端末操作手順マニュアル",
+    "url": "https://www.google.co.jp/",
+    "created_at": "test",
+    "updated_at": "test"
+  },
+  {
+    "id": 2,
+    "manual_name": "受付端末操作マニュアル、トラブルシューティング",
+    "url": "https://www.google.co.jp/",
+    "created_at": "test",
+    "updated_at": "test"
+  },
+  {
+    "id": 3,
+    "manual_name": "顧客側プリンタマニュアル",
+    "url": "https://www.google.co.jp/",
+    "created_at": "test",
+    "updated_at": "test"
+  },
+  {
+    "id": 4,
+    "manual_name": "顧客側スキャナ",
+    "url": "https://www.google.co.jp/",
+    "created_at": "test",
+    "updated_at": "test"
+  },
+  {
+    "id": 5,
+    "manual_name": "FAQ",
+    "url": "https://www.google.co.jp/",
+    "created_at": "test",
+    "updated_at": "test"
+  }
+]

@@ -5,6 +5,7 @@ import { styled } from "@mui/material/styles";
 import type { AppBarProps } from "@mui/material";
 import LogoutDialog from "./logout-dialog";
 import SystemManagementDialog from "./system-management-dialog";
+import ManualDialog from "./manual-dialog";
 
 interface NavbarProps extends AppBarProps {
   onOpenSidebar?: () => void;
@@ -24,6 +25,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
   const [logoutOpen, setLogoutOpen] = React.useState<boolean>(false);
   const [SystemManagementOpen, setSystemManagementOpen] =
     React.useState<boolean>(false);
+  const [manualOpen, setManualOpen] = React.useState<boolean>(false);
 
   const handleClickLogoutOpen = () => {
     setLogoutOpen(true);
@@ -39,6 +41,14 @@ export const Navbar: FC<NavbarProps> = (props) => {
 
   const handleSystemManagementClose = () => {
     setSystemManagementOpen(false);
+  };
+
+  const handleClickManualOpen = () => {
+    setManualOpen(true);
+  };
+
+  const handleManualClose = () => {
+    setManualOpen(false);
   };
 
   return (
@@ -63,7 +73,9 @@ export const Navbar: FC<NavbarProps> = (props) => {
           <Button color="inherit" onClick={handleClickSystemManagementOpen}>
             システム管理
           </Button>
-          <Button color="inherit">マニュアル</Button>
+          <Button color="inherit" onClick={handleClickManualOpen}>
+            マニュアル
+          </Button>
           <Button color="inherit" onClick={handleClickLogoutOpen}>
             ログアウト
           </Button>
@@ -82,6 +94,7 @@ export const Navbar: FC<NavbarProps> = (props) => {
         open={SystemManagementOpen}
         onClose={handleSystemManagementClose}
       />
+      <ManualDialog open={manualOpen} onClose={handleManualClose} />
     </>
   );
 };
