@@ -21,16 +21,16 @@ const SystemManagementDialog: FC<SystemManagementDialogProps> = (props) => {
   };
 
   const handleClickUsageCsvExport = () => {
-    navigate("/usage-csv-export")
-  }
+    navigate("/usage-csv-export");
+  };
 
   const handleClickInfomation = () => {
-    navigate("/infomation")
-  }
+    navigate("/infomation");
+  };
 
   const handleClickManual = () => {
-    navigate("/manual")
-  }
+    navigate("/manual");
+  };
 
   return (
     <Dialog
