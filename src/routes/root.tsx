@@ -3,7 +3,7 @@ import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 import { HomeLayout } from "../components/home-layout";
 import { SearchForm } from "../components/call-history/search-form";
-import { CallHistoryList } from "../components/call-history/call-history-list"
+import { CallHistoryList } from "../components/call-history/call-history-list";
 
 const Root: React.FC = () => {
   return (

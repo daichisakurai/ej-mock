@@ -66,7 +66,7 @@ export const SearchForm: React.FC = (props) => {
               timeSteps={{ minutes: 1 }}
             />
           </Stack>
-          <Stack sx={{mt: 3}}>
+          <Stack sx={{ mt: 3 }}>
             <DateTimePicker
               label="通話終了時刻"
               ampm={false}
@@ -94,7 +94,7 @@ export const SearchForm: React.FC = (props) => {
             />
           </Stack>
         </LocalizationProvider>
-        <Stack sx={{mt: 3}}>
+        <Stack sx={{ mt: 3 }}>
           <TextField
             id="serach-form-reception-terminal"
             name="serach-form-reception-terminal"
@@ -104,7 +104,7 @@ export const SearchForm: React.FC = (props) => {
             fullWidth
           />
         </Stack>
-        <Stack sx={{mt: 3}}>
+        <Stack sx={{ mt: 3 }}>
           <TextField
             id="serach-form-brtr"
             name="serach-form-brtr"
@@ -114,7 +114,7 @@ export const SearchForm: React.FC = (props) => {
             fullWidth
           />
         </Stack>
-        <Stack sx={{mt: 3}}>
+        <Stack sx={{ mt: 3 }}>
           <TextField
             id="serach-form-operator-terminal"
             name="serach-form-operator-terminal"
@@ -124,7 +124,7 @@ export const SearchForm: React.FC = (props) => {
             fullWidth
           />
         </Stack>
-        <Stack sx={{mt: 3}}>
+        <Stack sx={{ mt: 3 }}>
           <TextField
             id="serach-form-work-type"
             name="serach-form-work-type"
@@ -134,7 +134,7 @@ export const SearchForm: React.FC = (props) => {
             fullWidth
           />
         </Stack>
-        <Stack sx={{mt: 3}}>
+        <Stack sx={{ mt: 3 }}>
           <TextField
             id="serach-form-memo"
             name="serach-form-memo"

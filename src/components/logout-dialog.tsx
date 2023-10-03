@@ -21,8 +21,8 @@ const LogoutDialog: FC<LogoutDialogProps> = (props) => {
   };
 
   const handleLogout = () => {
-    navigate("/login")
-  }
+    navigate("/login");
+  };
 
   return (
     <Dialog

@@ -243,9 +243,9 @@ export const baseThemeOptions: ThemeOptions = {
           "& .MuiTextField-root": {
             minWidth: 185,
           },
-        }
-      }
-    }
+        },
+      },
+    },
   },
   direction: "ltr",
   shape: {
